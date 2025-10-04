@@ -233,9 +233,37 @@ During the initial load, you can see Cloudflare's verification process, confirmi
 
 ![Cloudflare Verification](screenshots/13.png)
 
+### Step 14: Automated Deployment in Action
+This screenshot demonstrates the complete automated deployment pipeline working seamlessly. After pushing code changes to GitHub, the website automatically updates with new content, showcasing the CI/CD pipeline effectiveness.
+
+![Automated Deployment Success](screenshots/14.png)
+
 ### Live URLs
 - **🔗 Custom Domain (HTTPS)**: https://static.kalra1994.co.in ✅
 - **🔗 S3 Direct**: http://gun.static.s3-website-us-west-2.amazonaws.com
+
+---
+
+## 🔄 Automated Deployment Pipeline
+
+### How It Works
+This project implements a complete CI/CD pipeline that automatically deploys changes:
+
+1. **Code Change**: Developer modifies files locally
+2. **Git Push**: Changes pushed to GitHub repository
+3. **GitHub Actions**: Workflow automatically triggers
+4. **S3 Deployment**: Files uploaded to AWS S3 bucket
+5. **Live Update**: Website immediately reflects changes
+
+### Pipeline Benefits
+- ⚡ **Fast Deployment**: Changes live in under 2 minutes
+- 🔒 **Secure**: Uses encrypted GitHub secrets
+- 📊 **Transparent**: Full deployment logs available
+- 🔄 **Automatic**: Zero manual intervention required
+- 🌍 **Global**: Updates propagate through Cloudflare CDN
+
+### Deployment Verification
+Screenshot 14 demonstrates a successful automated deployment where code changes were pushed to GitHub and automatically reflected on the live website, showcasing the seamless CI/CD integration.
 
 ---
 
