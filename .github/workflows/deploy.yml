@@ -32,6 +32,7 @@ jobs:
             -o -name "*.ico" -o -name "*.woff" -o -name "*.woff2" -o -name "*.ttf" \
             -o -name "*.otf" \) \
             ! -path "./architecture-diagram/*" \
+            ! -path "./screenshots/*" \
             ! -name "package*.json"
 
       # Step 4: Sync only static website files to S3
@@ -55,4 +56,9 @@ jobs:
             --include "*.json" \
             --exclude "package*.json" \
             --exclude "architecture-diagram/*" \
+            --exclude "screenshots/*" \
+            --exclude "README.md" \
+            --exclude "*.md" \
+            --exclude "*.txt" \
+            --exclude ".s3ignore" \
             --delete
